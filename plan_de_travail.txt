@@ -5,16 +5,15 @@ Installation sonore interactive pour questions et réponses
 
 2_Description
 
-Ce projet proposera une musique générée selon les réponses des participant.e.s aux questions posées par l'installation.
-Plus précisément, un écran affichera des questions aléatoirement auxquelles on pourra répondre grâce à 4 boutons disposés à l'avant de l'installation. Chacun des boutons entraînera l'évolution de la musique dans une direction différente, choisissant différents traitements, sons et/ou forme globale selon la réponse reçue.
-Les questions seront variées et pas directement liées à la musique elle-même (pas de questions théoriques). Les boutons-réponses seront associés à des couleurs (ou à un autre paramètre non-musical, le choix est encore à faire). Les participant.e.s devront ainsi répondre aux questions et guider la musique de manière intuitive plutôt qu'en suivant des règles claires et/ou préétablies.
+Ce projet proposera une musique générée selon les réponses des participant.e.s aux questions posées par l'installation. Plus précisément, un écran affichera des questions aléatoirement auxquelles on pourra répondre grâce à 4 boutons disposés à l'avant de l'installation. Chacun des boutons entraînera l'évolution de la musique dans une direction différente, choisissant différents traitements, sons et/ou forme globale selon la réponse reçue. Les questions seront variées et pas directement liées à la musique elle-même (pas de questions théoriques). Les boutons-réponses seront associés à des couleurs (ou à un autre paramètre non-musical, le choix est encore à faire). Les participant.e.s devront ainsi répondre aux questions et guider la musique de manière intuitive plutôt qu'en suivant des règles claires et/ou préétablies.
 
 
 3_Analyse des besoins
 
 Composition : création d'un pièce en plusieurs parties
 
-Variations musicales : élaboration de variantes (de traitements, de sons) destinées à chaque partie de la musique, tout dépendant des réponses
+Variations musicales : élaboration de variantes (de traitements, de sons) destinées à
+chaque partie de la musique, tout dépendant des réponses
 
 Corps de possibilités : gestion des différents chemins possibles et enchaînement adéquat (formation d'un squelette modulable)
 
@@ -39,7 +38,8 @@ Une question issue de la banque de question est posée au participant.
 
 Quatre boutons-réponses permettent aux participant.e.s d'interagir avec l'installation.
 
-Différents chemins sonores et musicaux existent pour chacune des réponses possibles. Différents traitements, enchaînements de sons ou direction globale y sont appliqués et offrent un résultat musical «adapté» au participant.
+Différents chemins sonores et musicaux existent pour chacune des réponses possibles.
+Différents traitements, enchaînements de sons ou direction globale y sont appliqués et offrent un résultat musical «adapté» au participant.
 
 À chaque stade de la musique, une nouvelle question est posée afin de faire évoluer la pièce.
 
