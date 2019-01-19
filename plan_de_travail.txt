@@ -3,30 +3,37 @@
 Installation sonore interactive pour questions et réponses
 
 
-2_Description (doit accomplir, présenté sous quelle forme)
+2_Description
 
 Ce projet proposera une musique générée selon les réponses des participant.e.s aux questions posées par l'installation.
 Plus précisément, un écran affichera des questions aléatoirement auxquelles on pourra répondre grâce à 4 boutons disposés à l'avant de l'installation. Chacun des boutons entraînera l'évolution de la musique dans une direction différente, choisissant différents traitements, sons et/ou forme globale selon la réponse reçue.
-Les questions seront variées et pas directement liées à la musique elle-même. Les boutons-réponses seront associés à des couleurs (ou à un autre paramètre non-musical, le choix est encore à faire). Les participant.e.s devront ainsi répondre aux questions et guider la musique de manière intuitive plutôt que suivant des règles claires.
+Les questions seront variées et pas directement liées à la musique elle-même (pas de questions théoriques). Les boutons-réponses seront associés à des couleurs (ou à un autre paramètre non-musical, le choix est encore à faire). Les participant.e.s devront ainsi répondre aux questions et guider la musique de manière intuitive plutôt qu'en suivant des règles claires et/ou préétablies.
 
 
-3_Analyse des besoins (décomposition du processus, composantes principales)
+3_Analyse des besoins
 
-Thématique : détermination de la thématique de base afin d'écrire les questions posées et les possibilités musicales possibles (et matériaux sonores).
+Composition : création d'un pièce en plusieurs parties
 
-Musique : élaboration de variantes sur une même musique, tout dépendant des réponses fournies par les participant.e.s (exploration des traitements possibles et intéressants pour le projet, mise en place d'une structure pouvant gérer différents chemins/décisions).
+Variations musicales : élaboration de variantes (de traitements, de sons) destinées à chaque partie de la musique, tout dépendant des réponses
 
-Questions/texte : mise en place d'un dispositif qui affichera des questions (pré-écrites) de manières aléatoires (écran d'ordinateur ou écran LCD).
+Corps de possibilités : gestion des différents chemins possibles et enchaînement adéquat (formation d'un squelette modulable)
+
+Dispositif physique d'interaction : mise en place des boutons-réponses et connexion avec le programme
+
+Questions/texte : mise en place d'un dispositif d'affichage des questions de manières aléatoires (écran d'ordinateur ou écran LCD).
 
 
-4_Acquisition de connaissances (recherches à effectuer, lecture, étude codes, inspiration)
+4_Acquisition de connaissances
 
-Recherche/étude de projets similaires «musique dont vous êtes le héros»
+Recherche/étude de projets similaires
+
+Librairies utiles pour la gestion de musique interactive
+
 Utilisation d'un écran LCD avec arduino
-Librairie utiles pour la gestion de musique interactive
+https://www.arduino.cc/en/Tutorial/HelloWorld
 
 
-5_Modèle (description des composantes, agissements et effets produits)
+5_Modèle
 
 Une question issue de la banque de question est posée au participant.
 
@@ -34,7 +41,7 @@ Quatre boutons-réponses permettent aux participant.e.s d'interagir avec l'insta
 
 Différents chemins sonores et musicaux existent pour chacune des réponses possibles. Différents traitements, enchaînements de sons ou direction globale y sont appliqués et offrent un résultat musical «adapté» au participant.
 
-À chaque stade de la musique, une nouvelle question est posée afin de créer une pièce complète de plus en plus «spécialisée».
+À chaque stade de la musique, une nouvelle question est posée afin de faire évoluer la pièce.
 
 
 6_Méthodes (abstractions développées pour réaliser les composantes)
@@ -50,7 +57,7 @@ Plusieurs sous-patch de possibilités de traitements, enchaînements sons et/ou 
 
 7_Implémentation
 
-Fort probablement avec pure data
+Pure data
 
 
 8_Tests et maintenance
