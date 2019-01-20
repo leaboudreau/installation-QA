@@ -30,12 +30,14 @@ Questions/texte : mise en place d'un dispositif d'affichage des questions de man
 
 4_Acquisition de connaissances
 
-Recherche/étude de projets similaires
+Recherche/étude de projets similaires, articles, inspirations générales
+http://www.lozano-hemmer.com/33_questions_per_minute.php
 
-Librairies utiles pour la gestion de musique interactive
+Recherche de librairies utiles pour la gestion de musique interactive
 
 Utilisation d'un écran LCD avec arduino
 https://www.arduino.cc/en/Tutorial/HelloWorld
+https://create.arduino.cc/projecthub/projects/tags/lcd
 
 
 5_Modèle
