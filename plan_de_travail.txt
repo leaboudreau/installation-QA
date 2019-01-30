@@ -70,3 +70,11 @@ Pure data
 
 8_Tests et maintenance
 
+############# Commentaires ###############
+
+Excellent projet!
+
+Je ne suis pas convaincu de la nécéssité d'un arduino pour l'affichage. Il me semble qu'un écran ou un projecteur sont plus simples à intégrer et l'affichage peut se faire directement de puredata. Un seul environnement de travail sera plus facile à gérer et simplifierait aussi la communication entre les questions/réponses et la musique.
+
+10/10
+
