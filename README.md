@@ -1,2 +1,2 @@
 # installation-QA
-Installation sonore interactive pour questions, réponses et traitements
+Installation sonore interactive pour questions et réponses

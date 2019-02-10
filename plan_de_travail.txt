@@ -75,6 +75,7 @@ développement dans Pd-extended.
 
 8_Tests et maintenance
 
+<<<<<<< HEAD
 8 février 2019
 - Recherche pour l'affichage de texte à partir de pure data (GEM?, ne fonctionne pas
 complètement, certains objets comme text3d ne sont pas inclus dans la librairie)
@@ -87,3 +88,13 @@ peut pas zoomer, donc trop petit
 le fichier texte ne se met à jour que lorsqu'il est sauvegardé
 - Réussite! La librairie GEM fonctionne, mais seulement dans PD-extented et non 
 dans vanilla. Affichage simple des questions sur une fenêtre externe [gemwin].
+=======
+############# Commentaires ###############
+
+Excellent projet!
+
+Je ne suis pas convaincu de la nécéssité d'un arduino pour l'affichage. Il me semble qu'un écran ou un projecteur sont plus simples à intégrer et l'affichage peut se faire directement de puredata. Un seul environnement de travail sera plus facile à gérer et simplifierait aussi la communication entre les questions/réponses et la musique.
+
+10/10
+
+>>>>>>> 8c325d9ef381bd6b75d5706eff1c350667a95309
