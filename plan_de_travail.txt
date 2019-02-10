@@ -35,6 +35,8 @@ http://www.lozano-hemmer.com/33_questions_per_minute.php
 
 Recherche de librairies utiles pour la gestion de musique interactive
 
+Librairie GEM (pd-extended)
+
 Utilisation d'un écran LCD avec arduino
 https://www.arduino.cc/en/Tutorial/HelloWorld
 https://create.arduino.cc/projecthub/projects/tags/lcd
@@ -54,7 +56,7 @@ Différents traitements, enchaînements de sons ou direction globale y sont appl
 
 6_Méthodes (abstractions développées pour réaliser les composantes)
 
-Communication pure data/arduino pour l'affichage des questions sur l'écran LCD.
+Affichage des questions à l'écran (ordinateur ou autre externe). Pd-extended
 
 Gestion des questions posées (aléatoires ou en lien avec les réponses préalablement données)
 
@@ -65,8 +67,23 @@ Plusieurs sous-patch de possibilités de traitements, enchaînements sons et/ou 
 
 7_Implémentation
 
-Pure data
+Pure data est le langage choisi pour le projet.
+Cependant (mise à jour du 10 février 2019), GEM sera utilisé pour l'affichage des 
+questions et il ne fonctionne pas dans PD-vanilla. Je continuerai donc le 
+développement dans Pd-extended.
 
 
 8_Tests et maintenance
 
+8 février 2019
+- Recherche pour l'affichage de texte à partir de pure data (GEM?, ne fonctionne pas
+complètement, certains objets comme text3d ne sont pas inclus dans la librairie)
+- Affichage dans la console de pure data (avec un print) fonctionnerait, mais on ne 
+peut pas zoomer, donc trop petit
+- Début de la patch «compo», 4 possibilités, 4 formes d'ondes...
+
+10 février 2019
+- Essais pour l'affichage avec les objets [qlist] et [textfile], toujours infructueux, 
+le fichier texte ne se met à jour que lorsqu'il est sauvegardé
+- Réussite! La librairie GEM fonctionne, mais seulement dans PD-extented et non 
+dans vanilla. Affichage simple des questions sur une fenêtre externe [gemwin].
