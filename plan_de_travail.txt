@@ -75,7 +75,6 @@ développement dans Pd-extended.
 
 8_Tests et maintenance
 
-<<<<<<< HEAD
 8 février 2019
 - Recherche pour l'affichage de texte à partir de pure data (GEM?, ne fonctionne pas
 complètement, certains objets comme text3d ne sont pas inclus dans la librairie)
@@ -88,7 +87,21 @@ peut pas zoomer, donc trop petit
 le fichier texte ne se met à jour que lorsqu'il est sauvegardé
 - Réussite! La librairie GEM fonctionne, mais seulement dans PD-extented et non 
 dans vanilla. Affichage simple des questions sur une fenêtre externe [gemwin].
-=======
+
+15 février 2019
+- Text-to-speech avec l'objet [shell].
+- Gestion des étapes de développement de la compo, interventions de la
+machine (semblant d'interaction machine/participant.e.s, il ne s'agit plus 
+seulement que de questions aléatoires et sans lien entre elles).
+
+
+********** Questions rencontre 18 février **********
+
+- Suggestions pour intégrer une meilleure gestion entre les patchs (hiérarchie/
+interactions entre les choix du participants, le son et les questions) afin que le 
+programme soit le moins confus possible.
+
+
 ############# Commentaires ###############
 
 Excellent projet!
@@ -97,4 +110,3 @@ Je ne suis pas convaincu de la nécéssité d'un arduino pour l'affichage. Il me
 
 10/10
 
->>>>>>> 8c325d9ef381bd6b75d5706eff1c350667a95309
