@@ -1,0 +1,18 @@
+#N canvas 0 530 1280 248 10;
+#X obj 457 62 bng 120 250 50 0 empty empty empty 17 7 0 10 -257985
+-262130 -1;
+#X obj 721 62 bng 120 250 50 0 empty empty empty 17 7 0 10 -4160 -203904
+-1;
+#X obj 973 62 bng 120 250 50 0 empty empty empty 17 7 0 10 -4034 -204786
+-1;
+#X obj 204 63 bng 120 250 50 0 empty empty empty 17 7 0 10 -258113
+-261234 -1;
+#X obj 591 285 QA_QuatreLignesSinus;
+#X obj 11 9 tgl 55 0 empty empty start 13 7 0 10 -232576 -1 -1 0 1
+;
+#X obj 11 286 QA_GestionQuestions;
+#X connect 0 0 4 1;
+#X connect 1 0 4 2;
+#X connect 2 0 4 3;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
