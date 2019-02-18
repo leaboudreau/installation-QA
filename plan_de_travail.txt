@@ -100,6 +100,11 @@ seulement que de questions aléatoires et sans lien entre elles).
 - Suggestions pour intégrer une meilleure gestion entre les patchs (hiérarchie/
 interactions entre les choix du participants, le son et les questions) afin que le 
 programme soit le moins confus possible.
+- Création de questions aléatoires au lieu de «piger» une question aléatoirement, mais 
+déjà construite
+- Conseils/mises en garde/suggestions pertinent.e.s concernant GEM? Possibilité de 
+combiner le projet du cours avec celui de Musique visuelle 2 (développement plus 
+approfondi de l'aspect/réaction/évolution visuelle)?
 
 
 ############# Commentaires ###############
