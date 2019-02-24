@@ -1,18 +1,25 @@
-#N canvas 0 530 1280 248 10;
-#X obj 457 62 bng 120 250 50 0 empty empty empty 17 7 0 10 -257985
+#N canvas 0 533 1280 248 10;
+#X obj 450 74 bng 120 250 50 0 empty empty empty 17 7 0 10 -257985
 -262130 -1;
-#X obj 721 62 bng 120 250 50 0 empty empty empty 17 7 0 10 -4160 -203904
+#X obj 721 74 bng 120 250 50 0 empty empty empty 17 7 0 10 -4160 -203904
 -1;
-#X obj 973 62 bng 120 250 50 0 empty empty empty 17 7 0 10 -4034 -204786
+#X obj 973 74 bng 120 250 50 0 empty empty empty 17 7 0 10 -4034 -204786
 -1;
-#X obj 204 63 bng 120 250 50 0 empty empty empty 17 7 0 10 -258113
+#X obj 204 75 bng 120 250 50 0 empty empty empty 17 7 0 10 -258113
 -261234 -1;
-#X obj 591 285 QA_QuatreLignesSinus;
 #X obj 11 9 tgl 55 0 empty empty start 13 7 0 10 -232576 -1 -1 0 1
 ;
+#X obj 33 186 bng 45 250 50 0 empty empty reset 8 7 0 10 -204800 -1
+-1;
+#X obj 591 285 QA_GestionMusique;
 #X obj 11 286 QA_GestionQuestions;
-#X connect 0 0 4 1;
-#X connect 1 0 4 2;
-#X connect 2 0 4 3;
-#X connect 3 0 4 0;
+#X obj 40 144 bng 35 250 50 0 empty empty open/close_window -20 7 0
+10 -203904 -1 -1;
+#X connect 0 0 6 2;
+#X connect 1 0 6 3;
+#X connect 2 0 6 4;
+#X connect 3 0 6 1;
+#X connect 4 0 7 0;
 #X connect 5 0 6 0;
+#X connect 5 0 7 1;
+#X connect 8 0 7 6;
