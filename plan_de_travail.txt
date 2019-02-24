@@ -56,11 +56,12 @@ Différents traitements, enchaînements de sons ou direction globale y sont appl
 
 6_Méthodes (abstractions développées pour réaliser les composantes)
 
-Affichage des questions à l'écran (ordinateur ou autre externe). Pd-extended
+Affichage des questions à l'écran (ordinateur ou autre externe). Pd-extended/vanilla 
+64 bits
 
 Gestion des questions posées (aléatoires ou en lien avec les réponses préalablement données)
 
-Sous-patch «chemin» comme guide général qui suivra le parcours selon les réponses et qui agira comme squelette de la pièce
+Sous-patch «chemin» comme guide général qui suivra le parcours selon les réponses et qui agira comme squelette de la pièce.
 
 Plusieurs sous-patch de possibilités de traitements, enchaînements sons et/ou direction globale (suivant la sous-patch «chemin»).
 
@@ -71,6 +72,8 @@ Pure data est le langage choisi pour le projet.
 Cependant (mise à jour du 10 février 2019), GEM sera utilisé pour l'affichage des 
 questions et il ne fonctionne pas dans PD-vanilla. Je continuerai donc le 
 développement dans Pd-extended.
+
+Pd-vanilla 64 bits.
 
 
 8_Tests et maintenance
@@ -93,6 +96,56 @@ dans vanilla. Affichage simple des questions sur une fenêtre externe [gemwin].
 - Gestion des étapes de développement de la compo, interventions de la
 machine (semblant d'interaction machine/participant.e.s, il ne s'agit plus 
 seulement que de questions aléatoires et sans lien entre elles).
+
+17 février 2019
+- Début de la mise en place pour une gestion/construction de questions aléatoire (en 
+plusieurs parties).
+
+21 février 2019
+- Continuation développement questions+gestion
+
+22 février 2019
+- Des clics apparaissent avant chaque intervention de voix lorsque la musique 
+démarre dans pd... à voir (ne semblait pas faire ça dans pd-extended).
+- Finalisation de l'intro (qui sera fixe), lien vers les questions aléatoires
+- Création de questions aléatoires : le procédé fonctionne, mais il va falloir mieux 
+organiser les sous-classes afin que la syntaxe, les accords de verbes et les agencements 
+face du sens/soient bien construits.
+- Problème avec les sous-patchs pour l'affichage des choix de réponses et leur retrait.
+
+23 février 2019
+- Formation des questions avec des boîtes à messages, «set» et «add2». Réduire le nombre 
+de fin de questions à maximum 5 pour l'instant.
+- Le bang out du l'objet [shell] pour trigger les prochain choix (avec objet [random]) 
+et pour afficher la question à la toute fin.
+- Trouver une manière plus simple pour effacer les choix de réponse après que la 
+question ait été répondue (trop de sous-patch).
+
+24 février 2019
+- À faire : système d'affichage/désaffichage des réponses (lien 4 boutons/4 réponses).
+- *** Une seule sous-patch «réponses» peut être faite pour chaque catégorie de 
+questions. Il ne faudra créer que plusieurs boîtes messages avec différentes réponses, 
+mais les objets généraux (text2d, gemhead, translate) n'auront pas à être copiés plusieurs 
+fois. (à faire)
+
+
+---------- MISE À JOUR EN DATE DU 24 FÉVRIER ----------
+
+- Pour jouer, ouvrir QA_FenetreDeJeu.pd. De là, les fonctions «start», «reset» et 
+«open/close_window» sont accessible, ainsi que les grandes sous-patchs 
+QA_GestionQuestions et QA_GestionMusique.
+- Un sinus se fait entendre suite à la première question posée, question qui sera toujours 
+la même à chaque début de jeu (introduction écrite). Par la suite, les questions sont 
+générées aléatoirement. En ce moment, seule la sous-patch pour les questions «Who» est 
+fonctionnelle. Les réponses sont toujours les mêmes, peu importe la question, il ne s'agit 
+là que d'un test d'affichage. 
+- Pour la suite des choses, je devrai faire le lien entre les actions du participants sur 
+les boutons réponses et l'affichage/désaffichage des questions réponses ainsi que 
+l'évolution dans la musique (qui n'est pas encore développée). Je m'enligne pour 
+l'instant sur l'utilisation de [counter] et [sel] afin de gérer le tout. Maintenant, 
+la continuation du jeu au-delà du 1er affichage de question n'est pas possible, car 
+presser un nouveau bouton repart la boucle d'introduction.
+- L'évolution musicale se fera par ajout de traitements sur l'onde sinusoïdale de base.
 
 
 ********** Questions rencontre 18 février **********
