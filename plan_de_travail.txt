@@ -128,6 +128,32 @@ questions. Il ne faudra créer que plusieurs boîtes messages avec différentes 
 mais les objets généraux (text2d, gemhead, translate) n'auront pas à être copiés plusieurs 
 fois. (à faire)
 
+17 mars 2019
+- Continuation et fin configuration des sous-patchs de création de questions aléatoires 
++ affichage écran principal (je me limite pour l'instant à une douzaine de possibilité 
+par type de questions)
+- Début écriture/gestion/affichage des réponses possibles
+NB. La musique est pour l'instant absente, je me concentre premièrement sur la gestion 
+des questions/réponses et ensuite, élaborerai la musique.
+
+18 mars 2019
+- Suite sous-patchs gestions des réponses. En ce moment, chaque catégorie de question 
+contient une sous-patch «answers» qui contient elle-même 3 ou 4 sous-patchs de 
+possibilités. Peut-être existe-t-il une manière plus simple avec moins de sous-patchs 
+afin d'organiser le tout (?).
+
+23 mars 2019
+- L'intro est mise en place. Les questions sont posées aléatoirement et le choix de 
+réponse occasionne une réaction de la part de l'installation et l'apparition d'une 
+note tenue. S'enchaîne par la suite une autre question créée aléatoirement et de 
+nouveaux choix de réponse, etc.
+- Évolution musique : mettre en place un counter global qui gardera le compte d'où nous 
+sommes rendus. À certains moments, selon la réponse choisie par le participant, un 
+nouveau processus sonore, son ou effet sera introduit.
+- Pour l'instant, le tout commence avec de simples sinus. Après 3 questions, premier 
+événement sonore spécifique à la réponse (tremolo sur la canal correspondant à la 
+réponse choisie).
+
 
 ---------- MISE À JOUR EN DATE DU 24 FÉVRIER ----------
 
