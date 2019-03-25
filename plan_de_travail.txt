@@ -154,6 +154,10 @@ nouveau processus sonore, son ou effet sera introduit.
 événement sonore spécifique à la réponse (tremolo sur la canal correspondant à la 
 réponse choisie).
 
+25 mars 2019
+- Peut-être utiliser l'objet [demultiplex~] au lieu de [spigot~] puisqu'il offre 
+plusieurs sorties possibles.
+
 
 ---------- MISE À JOUR EN DATE DU 24 FÉVRIER ----------
 
@@ -184,6 +188,29 @@ déjà construite
 - Conseils/mises en garde/suggestions pertinent.e.s concernant GEM? Possibilité de 
 combiner le projet du cours avec celui de Musique visuelle 2 (développement plus 
 approfondi de l'aspect/réaction/évolution visuelle)?
+
+
+---------- MISE À JOUR EN DATE DU 25 MARS ----------
+- Lorsqu'ouvert avec PD vanilla 0.49, le son et l'affichage GEM entrent en conflit (ex. 
+de simples sinus se mettent «sursauter», des glitch's apparaissent un peu partout). Ce 
+problème est absent avec pd-extended.
+- Six types de question peuvent se former, accompagnés de réponses (pour l'instant, 
+toujours les mêmes). Le gestion et l'affichage fonctionnent bien. Le tout fonctionne 
+en boucle simple pour l'instant : le départ appelle toujours la même question, puis 
+une réponse entraîne la création d'une nouvelle question posée quelques secondes plus 
+tard.
+- La musique est pour l'instant très minimale et pas vraiment développée, c'est la 
+prochaine étape. Le tout commence avec 4 possibilités de sinus (hauteurs différentes). 
+Chaque réponse correspondra à un traitement appliqué sur un de ceux-ci, à la lecture d'un 
+fichier audio ou autre. La sous-patch «pd envoi_sel» dans QA_GestionMusique s'occupe de 
+déclencher un objet [spigot~] correspondant au bouton réponse choisi. En ce moment, il 
+n'enclenche qu'une seule étape : l'application d'un tremolo sur un sinus.
+
+
+********** Questions rencontre 25 février **********
+- Problèmes son pd-0.49? (pas dans pd-extended)
+- Gestion du son, meilleure option que [spigot~]? Je viens de trouver [demultiplex~], 
+plus de sorties possibles. D'autres idées?
 
 
 ############# Commentaires ###############
