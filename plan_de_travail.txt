@@ -158,6 +158,21 @@ réponse choisie).
 - Peut-être utiliser l'objet [demultiplex~] au lieu de [spigot~] puisqu'il offre 
 plusieurs sorties possibles.
 
+5 avril 2019
+- Mise à jour des réponses possibles (pour qu'elles aient du sens).
+- Ajustement de la gestion-musique = 1 [counter] par «tranche» de son.
+- Ajout de «surprises sonores» pour certains choix de réponses avec arrays et [tabplay~].
+** Retarder la réaction de l'ordinateur lorsqu'il y a un [tabplay~].
+
+6 avril 2019
+- Élaboration du processus sonore d'une des voix (sera ensuite attribuée à chaque voix 
+avec quelques variantes).
+- Retard de la réaction robotique lors de «surprises sonores» (samples) mise en place.
+** Je vais conserver un [counter] global afin d'appliquer un effet global rendu à un 
+certain moment dans l'évolution de la musique (entre autres pour offrir un genre de 
+point culminant/fin à un moment pas trop éloigné, le test en classe ne devant pas 
+s'étirer trop longtemps).
+
 
 ---------- MISE À JOUR EN DATE DU 24 FÉVRIER ----------
 
