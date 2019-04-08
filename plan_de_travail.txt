@@ -250,6 +250,8 @@ systématiquement associés immédiatement aux boutons-réponses.
 des sinus).
 - Un test avec des participants externes permettrait sûrement de faire ressurgir des 
 problèmes.
+- Faire le ménage dans les patchs. Faire plus de sens entre les questions, réponses et 
+réactions machines.
 
 
 ############# Commentaires ###############
