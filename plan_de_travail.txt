@@ -25,7 +25,7 @@ Corps de possibilités : gestion des différents chemins possibles et enchaînem
 
 Dispositif physique d'interaction : mise en place des boutons-réponses et connexion avec le programme
 
-Questions/texte : mise en place d'un dispositif d'affichage des questions de manières aléatoires (écran d'ordinateur ou écran LCD).
+Questions/texte : mise en place d'un dispositif d'affichage des questions de manières aléatoires (écran d'ordinateur).
 
 
 4_Acquisition de connaissances
@@ -36,10 +36,6 @@ http://www.lozano-hemmer.com/33_questions_per_minute.php
 Recherche de librairies utiles pour la gestion de musique interactive
 
 Librairie GEM (pd-extended)
-
-Utilisation d'un écran LCD avec arduino
-https://www.arduino.cc/en/Tutorial/HelloWorld
-https://create.arduino.cc/projecthub/projects/tags/lcd
 
 
 5_Modèle
@@ -172,6 +168,17 @@ avec quelques variantes).
 certain moment dans l'évolution de la musique (entre autres pour offrir un genre de 
 point culminant/fin à un moment pas trop éloigné, le test en classe ne devant pas 
 s'étirer trop longtemps).
+- Application de la série d'effets sur chaque voix.
+- Une fois que le freeze aura été appliqué à la totalité des voix, la boucle de questions 
+arrêtera et une finale écrite entrera en fonction. Pour se rendre à la fin, le participant 
+devra avoir appuyé 7 fois sur chaque bouton réponse (cette information n'est pas révélée).
+
+7 avril 2019
+- Finale écrite mise en place
+- Reste à corriger ce qui ne fonctionne pas dans la gestion des samples uniques (ils 
+ne jouent pas toujours quand ils sont supposés).
+- Les samples jouent maintenant aux bons moments, mais les retardements installés (afin de 
+laisser le sample jouer avant la réaction de la machine) ne fonctionnent pas encore...
 
 
 ---------- MISE À JOUR EN DATE DU 24 FÉVRIER ----------
@@ -228,11 +235,15 @@ n'enclenche qu'une seule étape : l'application d'un tremolo sur un sinus.
 plus de sorties possibles. D'autres idées?
 
 
+---------- MISE À JOUR EN DATE DU 7 AVRIL ----------
+
+
+
 ############# Commentaires ###############
 
 Excellent projet!
 
-Je ne suis pas convaincu de la nécéssité d'un arduino pour l'affichage. Il me semble qu'un écran ou un projecteur sont plus simples à intégrer et l'affichage peut se faire directement de puredata. Un seul environnement de travail sera plus facile à gérer et simplifierait aussi la communication entre les questions/réponses et la musique.
+Je ne suis pas convaincu de la nécessité d'un arduino pour l'affichage. Il me semble qu'un écran ou un projecteur sont plus simples à intégrer et l'affichage peut se faire directement de puredata. Un seul environnement de travail sera plus facile à gérer et simplifierait aussi la communication entre les questions/réponses et la musique.
 
 10/10
 
