@@ -1,4 +1,4 @@
-#N canvas 749 26 521 580 10;
+#N canvas 34 133 521 580 10;
 #X obj 43 109 gemwin;
 #X obj 81 311 gemhead;
 #X msg 83 47 0 \, destroy;
@@ -82,7 +82,7 @@
 #X connect 25 0 12 0;
 #X restore 49 211 pd start;
 #X obj 49 490 shell;
-#N canvas 293 23 961 747 first_colour_choice 1;
+#N canvas 0 23 916 618 first_colour_choice 0;
 #X msg 249 197 text good choice;
 #X msg 249 224 say good choice;
 #X msg 402 206 text really?;
@@ -268,6 +268,13 @@ prochaine question;
 #X obj 139 66 delay 20;
 #X obj 159 46 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 210 108 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 29 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 9 208 delay;
+#X floatatom 44 182 5 0 0 0 - - -;
+#X obj 44 152 r wait_office;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 5 0 15 0;
@@ -275,13 +282,18 @@ prochaine question;
 #X connect 7 0 8 0;
 #X connect 8 0 0 0;
 #X connect 9 0 6 0;
-#X connect 10 0 7 0;
-#X connect 11 0 6 0;
+#X connect 10 0 16 0;
+#X connect 11 0 17 0;
 #X connect 12 0 6 0;
 #X connect 14 0 0 1;
 #X connect 15 0 14 0;
+#X connect 16 0 7 0;
+#X connect 17 0 18 0;
+#X connect 18 0 6 0;
+#X connect 19 0 18 1;
+#X connect 20 0 19 0;
 #X restore 90 57 pd wait_office;
-#N canvas 524 217 444 470 wait_beet 0;
+#N canvas 869 44 444 470 wait_beet 0;
 #X obj 149 182 gate 2;
 #X obj 107 380 outlet;
 #X obj 230 380 outlet;
@@ -299,6 +311,13 @@ prochaine question;
 #X obj 155 91 delay 20;
 #X obj 175 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 229 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 43 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 23 208 delay;
+#X floatatom 58 182 5 0 0 0 - - -;
+#X obj 58 152 r wait_beets;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 5 0 15 0;
@@ -307,11 +326,16 @@ prochaine question;
 #X connect 8 0 0 0;
 #X connect 9 0 6 0;
 #X connect 10 0 6 0;
-#X connect 12 0 7 0;
-#X connect 13 0 6 0;
+#X connect 12 0 16 0;
+#X connect 13 0 17 0;
 #X connect 14 0 0 1;
 #X connect 15 0 14 0;
-#X restore 306 53 pd wait_beet;
+#X connect 16 0 7 0;
+#X connect 17 0 18 0;
+#X connect 18 0 6 0;
+#X connect 19 0 18 1;
+#X connect 20 0 19 0;
+#X restore 267 58 pd wait_beet;
 #N canvas 800 94 418 471 wait_galaxie 0;
 #X obj 139 172 gate 2;
 #X obj 97 370 outlet;
@@ -330,6 +354,13 @@ prochaine question;
 #X obj 159 86 delay 20;
 #X obj 179 66 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 225 113 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 40 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 20 208 delay;
+#X floatatom 55 182 5 0 0 0 - - -;
+#X obj 43 156 r wait_galaxie;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 5 0 15 0;
@@ -338,10 +369,15 @@ prochaine question;
 #X connect 8 0 0 0;
 #X connect 9 0 6 0;
 #X connect 10 0 6 0;
-#X connect 12 0 7 0;
-#X connect 13 0 6 0;
+#X connect 12 0 16 0;
+#X connect 13 0 17 0;
 #X connect 14 0 0 1;
 #X connect 15 0 14 0;
+#X connect 16 0 7 0;
+#X connect 17 0 18 0;
+#X connect 18 0 6 0;
+#X connect 19 0 18 1;
+#X connect 20 0 19 0;
 #X restore 438 65 pd wait_galaxie;
 #N canvas 784 130 414 449 wait_no 0;
 #X obj 139 172 gate 2;
@@ -361,6 +397,13 @@ prochaine question;
 #X obj 150 79 delay 20;
 #X obj 170 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 220 116 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 41 123 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 21 206 delay;
+#X floatatom 56 180 5 0 0 0 - - -;
+#X obj 56 150 r wait_no;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 5 0 15 0;
@@ -369,10 +412,15 @@ prochaine question;
 #X connect 8 0 0 0;
 #X connect 9 0 6 0;
 #X connect 10 0 6 0;
-#X connect 12 0 7 0;
-#X connect 13 0 6 0;
+#X connect 12 0 16 0;
+#X connect 13 0 17 0;
 #X connect 14 0 0 1;
 #X connect 15 0 14 0;
+#X connect 16 0 7 0;
+#X connect 17 0 18 0;
+#X connect 18 0 6 0;
+#X connect 19 0 18 1;
+#X connect 20 0 19 0;
 #X restore 628 62 pd wait_no;
 #X obj 97 133 delay;
 #X obj 87 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -396,6 +444,14 @@ prochaine question;
 -1 -1;
 #X floatatom 671 118 5 0 0 0 - - -;
 #X obj 667 98 r wait_no;
+#X obj 257 114 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 425 99 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 53 111 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 608 104 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 1 0;
 #X connect 0 0 15 0;
 #X connect 0 0 20 0;
@@ -489,13 +545,13 @@ prochaine question;
 #X connect 80 1 20 0;
 #X connect 80 2 21 0;
 #X connect 80 3 22 0;
-#X connect 81 0 26 0;
+#X connect 81 0 105 0;
 #X connect 81 1 85 0;
-#X connect 82 0 27 0;
+#X connect 82 0 103 0;
 #X connect 82 1 90 0;
-#X connect 83 0 28 0;
+#X connect 83 0 104 0;
 #X connect 83 1 95 0;
-#X connect 84 0 29 0;
+#X connect 84 0 106 0;
 #X connect 84 1 99 0;
 #X connect 85 0 86 0;
 #X connect 86 0 26 0;
@@ -513,6 +569,10 @@ prochaine question;
 #X connect 100 0 29 0;
 #X connect 101 0 99 1;
 #X connect 102 0 101 0;
+#X connect 103 0 27 0;
+#X connect 104 0 28 0;
+#X connect 105 0 26 0;
+#X connect 106 0 29 0;
 #X restore 122 211 pd first_colour_choice;
 #X obj 122 181 inlet;
 #X obj 165 158 inlet;
@@ -521,7 +581,7 @@ prochaine question;
 #X msg 109 490 text;
 #X text 152 489 erase;
 #X text 96 129 introduction écrite;
-#N canvas 306 55 856 451 questions_aléatoires 0;
+#N canvas 735 332 856 451 questions_aléatoires 0;
 #X msg 144 238 say when;
 #X msg 287 241 say what;
 #X obj 34 71 bng 25 250 50 0 empty empty empty 17 7 0 10 -261682 -1
