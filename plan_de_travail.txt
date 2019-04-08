@@ -180,6 +180,9 @@ ne jouent pas toujours quand ils sont supposés).
 - Les samples jouent maintenant aux bons moments, mais les retardements installés (afin de 
 laisser le sample jouer avant la réaction de la machine) ne fonctionnent pas encore...
 
+8 avril 2019
+- Les retardements en cas de samples fonctionnent!
+
 
 ---------- MISE À JOUR EN DATE DU 24 FÉVRIER ----------
 
@@ -235,8 +238,18 @@ n'enclenche qu'une seule étape : l'application d'un tremolo sur un sinus.
 plus de sorties possibles. D'autres idées?
 
 
----------- MISE À JOUR EN DATE DU 7 AVRIL ----------
-
+---------- MISE À JOUR EN DATE DU 8 AVRIL ----------
+- Il y aurait encore beaucoup d'améliorations à apporter et de variantes afin de rendre 
+l'installation moins prévisible, mais somme toute, elle fonctionne.
+- En ce moment, il y a une fin qui termine la musique. L'idée serait qu'elle soit une
+grande boucle.
+- Il y aurait améliorations à apporter dans les transitions musicales et les ajouts 
+d'effets afin d'éliminer les clics et de rendre les évolutions plus douces et moins 
+systématiquement associés immédiatement aux boutons-réponses.
+- Il serait intéressant de varier la source de synthèse (en ce moment, ce ne sont que 
+des sinus).
+- Un test avec des participants externes permettrait sûrement de faire ressurgir des 
+problèmes.
 
 
 ############# Commentaires ###############
